@@ -35,18 +35,20 @@
 
         .header img { 
             width: 100%; 
-            max-width: 280px; /* Tamaño ideal para el logo alargado */
+            max-width: 320px; 
             height: auto;
-            margin: 10px auto 20px auto; 
+            margin: 0 auto 10px auto; 
             display: block;
+            object-fit: contain;
         }
 
         h2 { 
             color: var(--jd-green); 
             margin: 15px 0; 
-            font-size: 22px;
+            font-size: 20px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
         }
 
         .instrucciones {
@@ -67,7 +69,7 @@
 
         .grid-sucursales {
             display: grid;
-            gap: 12px;
+            gap: 10px;
         }
 
         .btn { 
@@ -77,10 +79,10 @@
             background-color: var(--jd-green); 
             color: white; 
             text-decoration: none; 
-            padding: 16px; 
+            padding: 15px; 
             border-radius: 12px; 
             font-weight: bold; 
-            font-size: 17px;
+            font-size: 16px;
             transition: transform 0.1s, background-color 0.3s;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
@@ -92,8 +94,8 @@
 
         .btn::before {
             content: "📞";
-            margin-right: 12px;
-            font-size: 18px;
+            margin-right: 10px;
+            font-size: 16px;
         }
 
         .footer { 
@@ -109,8 +111,8 @@
 
 <div class="container">
     <div class="header">
-        <img src="https://miagronorte.com.ar/assets/img/logojdfull.png" alt="AgroNorte John Deere">
-        <h2>Guardia de Repuestos</h2>
+        <img src="https://miagronorte.com.ar/assets/img/logojdfull.png" alt="Agronorte John Deere">
+        <h2>AGRONORTE - Guardia de Repuestos</h2>
     </div>
 
     <div class="instrucciones">
@@ -140,7 +142,7 @@
     </div>
 
     <div class="footer">
-        © 2026 Agronorte - Gestión de Guardias de Repuestos
+        © 2026 Agronorte - Gestión de Guardias
     </div>
 </div>
 
