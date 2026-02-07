@@ -35,41 +35,41 @@
 
         .header img { 
             width: 100%; 
-            max-width: 320px; 
+            max-width: 200px; /* Tamaño ajustado para el logo cuadrado/vertical */
             height: auto;
             margin: 0 auto 10px auto; 
             display: block;
-            object-fit: contain;
         }
 
         h2 { 
             color: var(--jd-green); 
-            margin: 15px 0; 
-            font-size: 20px;
+            margin: 20px 0; 
+            font-size: 22px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            line-height: 1.2;
+            font-weight: 800;
         }
 
         .instrucciones {
             background-color: #fff9c4;
-            padding: 15px;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 15px;
             margin-bottom: 25px;
             border-left: 5px solid var(--jd-yellow);
             text-align: left;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
         }
 
         .instrucciones p {
-            margin: 5px 0;
-            font-size: 14px;
+            margin: 8px 0;
+            font-size: 15px;
             color: #333;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .grid-sucursales {
             display: grid;
-            gap: 10px;
+            gap: 12px;
         }
 
         .btn { 
@@ -79,31 +79,31 @@
             background-color: var(--jd-green); 
             color: white; 
             text-decoration: none; 
-            padding: 15px; 
-            border-radius: 12px; 
+            padding: 18px; 
+            border-radius: 15px; 
             font-weight: bold; 
-            font-size: 16px;
-            transition: transform 0.1s, background-color 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-size: 18px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         .btn:active { 
-            transform: scale(0.96); 
+            transform: scale(0.97); 
             background-color: #2b6122;
         }
 
         .btn::before {
             content: "📞";
-            margin-right: 10px;
-            font-size: 16px;
+            margin-right: 12px;
+            font-size: 18px;
         }
 
         .footer { 
-            margin-top: 30px; 
-            font-size: 12px; 
-            color: #999; 
+            margin-top: 40px; 
+            font-size: 13px; 
+            color: #888; 
             border-top: 1px solid #eee;
-            padding-top: 15px;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -111,8 +111,8 @@
 
 <div class="container">
     <div class="header">
-        <img src="https://miagronorte.com.ar/assets/img/logojdfull.png" alt="Agronorte John Deere">
-        <h2>AGRONORTE - Guardia de Repuestos</h2>
+        <img src="https://miagronorte.com.ar/assets/imgs/logos/LogoSoloColorfull.png" alt="Agronorte Logo">
+        <h2>Guardia de Repuestos</h2>
     </div>
 
     <div class="instrucciones">
