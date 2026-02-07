@@ -36,9 +36,13 @@
             text-align: center;
         }
 
+        .header {
+            --brand-max-width: 110px;
+        }
+
         .header img {
             width: 100%;
-            max-width: 120px;
+            max-width: var(--brand-max-width);
             /* Tamaño ajustado para el logo cuadrado/vertical */
             height: auto;
             margin: 0 auto 10px auto;
@@ -50,7 +54,9 @@
             font-weight: 900;
             font-size: 24px;
             letter-spacing: 0.4px;
-            margin: 4px 0 14px 0;
+            width: 100%;
+            max-width: var(--brand-max-width);
+            margin: 4px auto 14px auto;
         }
 
         h2 {
