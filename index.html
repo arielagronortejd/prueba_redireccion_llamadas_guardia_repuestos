@@ -2,37 +2,142 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guardia de Repuestos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Guardia de Repuestos - AgroNorte</title>
     <style>
-        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; text-align: center; }
-        .card { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .btn { display: block; background: #367C2B; color: white; text-decoration: none; padding: 15px; margin: 10px 0; border-radius: 10px; font-weight: bold; font-size: 18px; }
-        h2 { color: #367C2B; }
+        :root {
+            --jd-green: #367C2B;
+            --jd-yellow: #FFDE00;
+            --bg-gray: #f8f9fa;
+        }
+
+        * { box-sizing: border-box; }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--bg-gray); 
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: center;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 450px; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            border-top: 8px solid var(--jd-yellow);
+        }
+
+        .header img { 
+            width: 70px; 
+            margin-bottom: 15px; 
+        }
+
+        h2 { 
+            color: var(--jd-green); 
+            margin: 10px 0; 
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .instrucciones {
+            background-color: #fff9c4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--jd-yellow);
+            text-align: left;
+        }
+
+        .instrucciones p {
+            margin: 5px 0;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .grid-sucursales {
+            display: grid;
+            gap: 12px;
+        }
+
+        .btn { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--jd-green); 
+            color: white; 
+            text-decoration: none; 
+            padding: 16px; 
+            border-radius: 12px; 
+            font-weight: bold; 
+            font-size: 17px;
+            transition: transform 0.1s, background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn:active { 
+            transform: scale(0.96); 
+            background-color: #2b6122;
+        }
+
+        .btn::before {
+            content: "📞";
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .footer { 
+            margin-top: 30px; 
+            font-size: 12px; 
+            color: #777; 
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/John_Deere_logo.svg" width="80" alt="Logo">
+
+<div class="container">
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/John_Deere_logo.svg" alt="Logo John Deere">
         <h2>Guardia de Repuestos</h2>
-        <p>Toca tu sucursal para llamar:</p>
-        
-        <a href="tel:+543498401758,2,1,1" class="btn">San Justo</a>
-        <a href="tel:+543498401758,2,1,2" class="btn">Ceres</a>
-        <a href="tel:+543498401758,2,1,3" class="btn">Avellaneda</a>
-        <a href="tel:+543498401758,2,2,1" class="btn">Morteros</a>
-        <a href="tel:+543498401758,2,2,2" class="btn">Córdoba</a>
-        <a href="tel:+543498401758,2,3,1" class="btn">Totoras</a>
-        <a href="tel:+543498401758,2,3,2" class="btn">Cañada de Gómez</a>
-        <a href="tel:+543498401758,2,3,3" class="btn">Carlos Pellegrini</a>
-        <a href="tel:+543498401758,2,3,4" class="btn">Rosario</a>
-        <a href="tel:+543498401758,2,4,1" class="btn">Mercedes</a>
-        <a href="tel:+543498401758,2,4,2" class="btn">Oberá</a>
-        <a href="tel:+543498401758,2,5,1" class="btn">La Paz</a>
-        <a href="tel:+543498401758,2,5,2" class="btn">Concordia</a>
-        <a href="tel:+543498401758,2,5,3" class="btn">Chajarí</a>
-        <a href="tel:+543498401758,2,5,4" class="btn">Paraná</a>
-        <a href="tel:+543498401758,2,5,5" class="btn">Victoria</a>
     </div>
+
+    <div class="instrucciones">
+        <p><strong>¿Cómo llamar?</strong></p>
+        <p>1. Toque el botón de la sucursal con la que quiere comunicarse.</p>
+        <p>2. El sistema marcará las opciones automáticamente.</p>
+        <p>3. Aguarde en línea hasta que el técnico atienda.</p>
+    </div>
+
+    <div class="grid-sucursales">
+        <a href="tel:+543498401758,,,2,1,1" class="btn">San Justo</a>
+        <a href="tel:+543498401758,,,2,1,2" class="btn">Ceres</a>
+        <a href="tel:+543498401758,,,2,1,3" class="btn">Avellaneda</a>
+        <a href="tel:+543498401758,,,2,2,1" class="btn">Morteros</a>
+        <a href="tel:+543498401758,,,2,2,2" class="btn">Córdoba</a>
+        <a href="tel:+543498401758,,,2,3,1" class="btn">Totoras</a>
+        <a href="tel:+543498401758,,,2,3,2" class="btn">Cañada de Gómez</a>
+        <a href="tel:+543498401758,,,2,3,3" class="btn">Carlos Pellegrini</a>
+        <a href="tel:+543498401758,,,2,3,4" class="btn">Rosario</a>
+        <a href="tel:+543498401758,,,2,4,1" class="btn">Mercedes</a>
+        <a href="tel:+543498401758,,,2,4,2" class="btn">Oberá</a>
+        <a href="tel:+543498401758,,,2,5,1" class="btn">La Paz</a>
+        <a href="tel:+543498401758,,,2,5,2" class="btn">Concordia</a>
+        <a href="tel:+543498401758,,,2,5,3" class="btn">Chajarí</a>
+        <a href="tel:+543498401758,,,2,5,4" class="btn">Paraná</a>
+        <a href="tel:+543498401758,,,2,5,5" class="btn">Victoria</a>
+    </div>
+
+    <div class="footer">
+        © 2026 AgroNorte - Atención de Emergencias
+    </div>
+</div>
+
 </body>
-</html>
+</html>    
