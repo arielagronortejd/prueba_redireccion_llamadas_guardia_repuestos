@@ -30,18 +30,23 @@
             border-radius: 20px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
             border-top: 8px solid var(--jd-yellow);
+            text-align: center;
         }
 
         .header img { 
-            width: 70px; 
-            margin-bottom: 15px; 
+            width: 100%; 
+            max-width: 280px; /* Tamaño ideal para el logo alargado */
+            height: auto;
+            margin: 10px auto 20px auto; 
+            display: block;
         }
 
         h2 { 
             color: var(--jd-green); 
-            margin: 10px 0; 
-            font-size: 24px;
+            margin: 15px 0; 
+            font-size: 22px;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .instrucciones {
@@ -55,7 +60,7 @@
 
         .instrucciones p {
             margin: 5px 0;
-            font-size: 15px;
+            font-size: 14px;
             color: #333;
             line-height: 1.4;
         }
@@ -77,7 +82,7 @@
             font-weight: bold; 
             font-size: 17px;
             transition: transform 0.1s, background-color 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         .btn:active { 
@@ -87,14 +92,14 @@
 
         .btn::before {
             content: "📞";
-            margin-right: 10px;
+            margin-right: 12px;
             font-size: 18px;
         }
 
         .footer { 
             margin-top: 30px; 
             font-size: 12px; 
-            color: #777; 
+            color: #999; 
             border-top: 1px solid #eee;
             padding-top: 15px;
         }
@@ -104,15 +109,15 @@
 
 <div class="container">
     <div class="header">
-        <img src="https://miagronorte.com.ar/assets/img/logojdfull.png" alt="Logo John Deere">
+        <img src="https://miagronorte.com.ar/assets/img/logojdfull.png" alt="AgroNorte John Deere">
         <h2>Guardia de Repuestos</h2>
     </div>
 
     <div class="instrucciones">
-        <p><strong>¿Cómo llamar?</strong></p>
-        <p>1. Toque el botón de la sucursal con la que quiere comunicarse.</p>
+        <p><strong>¿Cómo comunicarse?</strong></p>
+        <p>1. Toque el botón de su sucursal.</p>
         <p>2. El sistema marcará las opciones automáticamente.</p>
-        <p>3. Aguarde en línea hasta que el técnico atienda.</p>
+        <p>3. <strong>No cuelgue</strong> durante el silencio inicial, aguarde a que el técnico atienda.</p>
     </div>
 
     <div class="grid-sucursales">
@@ -135,9 +140,9 @@
     </div>
 
     <div class="footer">
-        © 2026 AgroNorte - Atención de Emergencias
+        © 2026 Agronorte - Gestión de Guardias de Repuestos
     </div>
 </div>
 
 </body>
-</html>    
+</html>
